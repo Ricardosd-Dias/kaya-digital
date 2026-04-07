@@ -1,5 +1,5 @@
 import { ImageWithFallback } from "./figma/ImageWithFallback";
-import afonsoImg from "figma:asset/d8693ecc5891d2552bb588748540808815a5f28a.png";
+import afonsoImg from "../assets/d8693ecc5891d2552bb588748540808815a5f28a.png";
 import bernardoImg from "figma:asset/0fdadf4af9aa4eea39ec2c66144781b255282ff5.png";
 import diogoImg from "figma:asset/7e5acfd647f43081c9df6c4c6e5d2ee1fbc0d44d.png";
 import ricardoImg from "figma:asset/b59daad7cc624dc5f3532671a2ae3276909d7d66.png";
