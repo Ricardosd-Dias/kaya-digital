@@ -216,7 +216,7 @@ export const caseStudies: CaseStudy[] = [
       { value: "100%", label: "UX/UI Personalizado" },
       { value: "Completo", label: "Acompanhamento" },
     ],
-    images: ["../assets/asset/c669fe924c323acfcfce5a41b8205a0ef244752c.png"],
+    images: ["../assets/c669fe924c323acfcfce5a41b8205a0ef244752c.png"],
   },
   {
     slug: "ux-seo-dra-barbara-campos",
@@ -243,6 +243,6 @@ export const caseStudies: CaseStudy[] = [
       { value: "Lead Gen", label: "Estratégia" },
       { value: "Referência", label: "Posicionamento" },
     ],
-    images: ["../assets/asset/b5fb7ee6a9953b7b9598b6f1f78b99d4d5879bce.png"],
+    images: ["../assets/b5fb7ee6a9953b7b9598b6f1f78b99d4d5879bce.png"],
   },
 ];

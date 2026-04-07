@@ -4,9 +4,9 @@ import bernardoImg from "../assets/0fdadf4af9aa4eea39ec2c66144781b255282ff5.png"
 import diogoImg from "../assets/7e5acfd647f43081c9df6c4c6e5d2ee1fbc0d44d.png";
 import ricardoImg from "../assets/b59daad7cc624dc5f3532671a2ae3276909d7d66.png";
 import pedroImg from "../assets/693e89800adb46d1565f13f517dc55eb22ecb946.png";
-import riazeImg from "../assets/asset/77c4854515191d7f1bb89bd22db8be032fa5826f.png";
-import tomasImg from "../assets/asset/a37159d313064be9db4d4b0c642d2c24a8beb866.png";
-import franciscoImg from "../assets/asset/35849cbfed1b0f7f5afe76e392a0c8809c04f510.png";
+import riazeImg from "../assets/77c4854515191d7f1bb89bd22db8be032fa5826f.png";
+import tomasImg from "../assets/a37159d313064be9db4d4b0c642d2c24a8beb866.png";
+import franciscoImg from "../assets/35849cbfed1b0f7f5afe76e392a0c8809c04f510.png";
 import useEmblaCarousel from "embla-carousel-react";
 import { useCallback, useEffect, useState } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
@@ -121,8 +121,8 @@ export function AboutSection() {
           >
             coletivo digital
           </span>{" "}
-          baseado em Portugal que une estratégia, performance e criatividade para
-          que cada disciplina do digital trabalhe como uma só.
+          baseado em Portugal que une estratégia, performance e criatividade
+          para que cada disciplina do digital trabalhe como uma só.
         </h2>
 
         {/* Team Carousel */}
@@ -133,7 +133,10 @@ export function AboutSection() {
                 <div
                   key={index}
                   className="flex-[0_0_100%] min-[500px]:flex-[0_0_calc(50%-10px)] md:flex-[0_0_calc(33.333%-14px)] lg:flex-[0_0_calc(25%-15px)] min-w-0"
-                  style={{ marginRight: index === teamMembers.length - 1 ? '20px' : '0' }}
+                  style={{
+                    marginRight:
+                      index === teamMembers.length - 1 ? "20px" : "0",
+                  }}
                 >
                   <div
                     className="rounded-xl p-7 flex flex-col justify-between h-full"
@@ -158,7 +161,9 @@ export function AboutSection() {
                     <div className="flex justify-end -mr-1 my-4">
                       <div
                         className="w-[88px] h-[88px] rounded-full overflow-hidden"
-                        style={{ boxShadow: "0 4px 20px rgba(255,153,65,0.18)" }}
+                        style={{
+                          boxShadow: "0 4px 20px rgba(255,153,65,0.18)",
+                        }}
                       >
                         <img
                           src={member.image}
@@ -174,7 +179,10 @@ export function AboutSection() {
                       style={{ borderTop: "1px solid rgba(0,0,0,0.06)" }}
                     >
                       <p className="text-sm text-[#1a1a1a]">{member.role}</p>
-                      <p className="text-sm mt-0.5" style={{ color: "#6b6b6b" }}>
+                      <p
+                        className="text-sm mt-0.5"
+                        style={{ color: "#6b6b6b" }}
+                      >
                         {member.expertise}
                       </p>
                     </div>

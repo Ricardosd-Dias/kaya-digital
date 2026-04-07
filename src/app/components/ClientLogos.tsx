@@ -1,12 +1,12 @@
-import drBarbaraImg from "../assets/asset/253ef51bfe2ec606bf4de111a9e9d82178e66334.png";
-import kleedImg from "../assets/asset/d1462288a6e3df776da93d61fc9ac14a618144b8.png";
-import hirundoImg from "../assets/asset/6cf1e9cf81d49259b47c92cb6d14ae42922765e1.png";
-import pharmaScalabisImg from "../assets/asset/96709d12c8fefc947440ce8b49adeed192485f59.png";
-import lachoixImg from "../assets/asset/c2abd865768c356668f01588fb835953dd833ca4.png";
-import editImg from "../assets/asset/af3a06795308f30a84368bb473c1c6c19aaa5afa.png";
-import flairImg from "../assets/asset/40274b33716da121c57136146bbfe23d9ab41e7b.png";
-import internationalImg from "../assets/asset/ed77ed396d3ca0f752ea0d88b1532c10da52d969.png";
-import domiSaudeImg from "../assets/asset/580b40a4aca557980a61bfbecdd25d2fe1bd6317.png";
+import drBarbaraImg from "../assets/253ef51bfe2ec606bf4de111a9e9d82178e66334.png";
+import kleedImg from "../assets/d1462288a6e3df776da93d61fc9ac14a618144b8.png";
+import hirundoImg from "../assets/6cf1e9cf81d49259b47c92cb6d14ae42922765e1.png";
+import pharmaScalabisImg from "../assets/96709d12c8fefc947440ce8b49adeed192485f59.png";
+import lachoixImg from "../assets/c2abd865768c356668f01588fb835953dd833ca4.png";
+import editImg from "../assets/af3a06795308f30a84368bb473c1c6c19aaa5afa.png";
+import flairImg from "../assets/40274b33716da121c57136146bbfe23d9ab41e7b.png";
+import internationalImg from "../assets/ed77ed396d3ca0f752ea0d88b1532c10da52d969.png";
+import domiSaudeImg from "../assets/580b40a4aca557980a61bfbecdd25d2fe1bd6317.png";
 import { useEffect, useRef } from "react";
 
 const clients = [

@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import { Menu, X } from "lucide-react";
 import { Link, useLocation, useNavigate } from "react-router";
-import logo from "../assets/asset/44b72344ef51367e7c76d195028708a7b2d42159.png";
+import logo from "../assets/44b72344ef51367e7c76d195028708a7b2d42159.png";
 
 const navLinks = [
   { label: "Serviços", hash: "#servicos" },
