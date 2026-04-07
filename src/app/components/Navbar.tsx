@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import { Menu, X } from "lucide-react";
 import { Link, useLocation, useNavigate } from "react-router";
-import logo from "figma:asset/44b72344ef51367e7c76d195028708a7b2d42159.png";
+import logo from "../assets/asset/44b72344ef51367e7c76d195028708a7b2d42159.png";
 
 const navLinks = [
   { label: "Serviços", hash: "#servicos" },
@@ -29,7 +29,10 @@ export function Navbar() {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
-  const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, hash: string) => {
+  const handleNavClick = (
+    e: React.MouseEvent<HTMLAnchorElement>,
+    hash: string,
+  ) => {
     e.preventDefault();
     setMenuOpen(false);
 
@@ -51,7 +54,9 @@ export function Navbar() {
         transform: visible ? "translateY(0)" : "translateY(-100%)",
         backgroundColor: scrolled ? "rgba(245, 240, 235, 0.95)" : "transparent",
         backdropFilter: scrolled ? "blur(12px)" : "none",
-        borderBottom: scrolled ? "1px solid rgba(0,0,0,0.05)" : "1px solid transparent",
+        borderBottom: scrolled
+          ? "1px solid rgba(0,0,0,0.05)"
+          : "1px solid transparent",
       }}
     >
       <Link to="/">
@@ -77,7 +82,7 @@ export function Navbar() {
             >
               {link.label}
             </a>
-          )
+          ),
         )}
       </div>
 
@@ -106,7 +111,7 @@ export function Navbar() {
               >
                 {link.label}
               </a>
-            )
+            ),
           )}
         </div>
       )}

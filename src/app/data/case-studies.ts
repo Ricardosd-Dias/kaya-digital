@@ -170,8 +170,7 @@ export const caseStudies: CaseStudy[] = [
   {
     slug: "seo-ortopedista-website",
     headline: "1ª Página Google",
-    title:
-      "Como Posicionámos uma Ortopedista na 1.ª Página do Google com SEO",
+    title: "Como Posicionámos uma Ortopedista na 1.ª Página do Google com SEO",
     client: "Ortopedista",
     tag: "SEO",
     industry: "Saúde",
@@ -196,8 +195,7 @@ export const caseStudies: CaseStudy[] = [
   {
     slug: "ecommerce-adega-labrugeira",
     headline: "E-COMMERCE · UX/UI",
-    title:
-      "Como Lançámos o Primeiro E-Commerce da Adega da Labrugeira do Zero",
+    title: "Como Lançámos o Primeiro E-Commerce da Adega da Labrugeira do Zero",
     client: "Adega / Comércio de Vinhos",
     tag: "UX/Web Design",
     industry: "Comércio de Vinhos",
@@ -218,9 +216,7 @@ export const caseStudies: CaseStudy[] = [
       { value: "100%", label: "UX/UI Personalizado" },
       { value: "Completo", label: "Acompanhamento" },
     ],
-    images: [
-      "figma:asset/c669fe924c323acfcfce5a41b8205a0ef244752c.png",
-    ],
+    images: ["../assets/asset/c669fe924c323acfcfce5a41b8205a0ef244752c.png"],
   },
   {
     slug: "ux-seo-dra-barbara-campos",
@@ -247,8 +243,6 @@ export const caseStudies: CaseStudy[] = [
       { value: "Lead Gen", label: "Estratégia" },
       { value: "Referência", label: "Posicionamento" },
     ],
-    images: [
-      "figma:asset/b5fb7ee6a9953b7b9598b6f1f78b99d4d5879bce.png",
-    ],
+    images: ["../assets/asset/b5fb7ee6a9953b7b9598b6f1f78b99d4d5879bce.png"],
   },
 ];
