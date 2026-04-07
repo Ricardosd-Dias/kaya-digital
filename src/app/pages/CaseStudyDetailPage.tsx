@@ -7,38 +7,38 @@ import { useCountUp, parseStatValue } from "../hooks/useCountUp";
 import { Lightbox } from "../components/Lightbox";
 
 // Parafarmácia images
-import paraImg1 from "../../6ac8a7cb90168bf6ca8a97d311974c303d8ff6ed.png";
-import paraImg2 from "../../581b6a0ea49975c3bd9b1c0108f4259d534b709c.png";
+import paraImg1 from "../../assets/6ac8a7cb90168bf6ca8a97d311974c303d8ff6ed.png";
+import paraImg2 from "../../assets/581b6a0ea49975c3bd9b1c0108f4259d534b709c.png";
 
 // Moda de Luxo images
-import modaImg1 from "../../c0e3a403519ed5798c7161b37c3c673216a2323a.png";
-import modaImg2 from "../../19bf81ebc689a15993886024c18890d46f3b5154.png";
-import modaImg3 from "../../850ba839d541c74c2b080e359ecf685618406b54.png";
+import modaImg1 from "../../assets/c0e3a403519ed5798c7161b37c3c673216a2323a.png";
+import modaImg2 from "../../assets/19bf81ebc689a15993886024c18890d46f3b5154.png";
+import modaImg3 from "../../assets/850ba839d541c74c2b080e359ecf685618406b54.png";
 
 // Cuidadores image
-import cuidadoresImg1 from "../../fac45192486c58f5761fbe1021d5d2d0896e4656.png";
+import cuidadoresImg1 from "../../assets/fac45192486c58f5761fbe1021d5d2d0896e4656.png";
 
 // Colégio Privado image
-import colegioImg1 from "../../0cc9201dcf7b4b3cbacb82e7c118636654cd860a.png";
+import colegioImg1 from "../../assets/0cc9201dcf7b4b3cbacb82e7c118636654cd860a.png";
 
 // Sapatos de Luxo image
-import sapatosImg1 from "../../d7672908e2439e3b966a9ecbadd00c42bbd48770.png";
+import sapatosImg1 from "../../assets/d7672908e2439e3b966a9ecbadd00c42bbd48770.png";
 
 // Ténis image
-import tenisImg1 from "../../d808f3b087eac84dfae3a6d6e1fa7e54f507a16d.png";
+import tenisImg1 from "../../assets/d808f3b087eac84dfae3a6d6e1fa7e54f507a16d.png";
 
 // Suplementos images
-import suplementosImg1 from "../../679746a5da33135cd818bbe41c7bf2a0f113cdd1.png";
-import suplementosImg2 from "../../d7ca709ed78bd91a5bc0eb956f954df462fd4274.png";
+import suplementosImg1 from "../../assets/679746a5da33135cd818bbe41c7bf2a0f113cdd1.png";
+import suplementosImg2 from "../../assets/d7ca709ed78bd91a5bc0eb956f954df462fd4274.png";
 
 // SEO Ortopedista image
-import seoImg1 from "../../3bf22c4fee94dd4f364ac1aa72d5b92fa8c7a7fc.png";
+import seoImg1 from "../../assets/3bf22c4fee94dd4f364ac1aa72d5b92fa8c7a7fc.png";
 
 // Adega Labrugeira image
-import adegaImg1 from "../../c669fe924c323acfcfce5a41b8205a0ef244752c.png";
+import adegaImg1 from "../../assets/c669fe924c323acfcfce5a41b8205a0ef244752c.png";
 
 // Dra. Bárbara Campos image
-import barbaraImg1 from "../../b5fb7ee6a9953b7b9598b6f1f78b99d4d5879bce.png";
+import barbaraImg1 from "../../assets/b5fb7ee6a9953b7b9598b6f1f78b99d4d5879bce.png";
 
 const imageMap: Record<string, string[]> = {
   "ecommerce-parafarmacia-google-ads": [paraImg1, paraImg2],
