@@ -41,14 +41,13 @@ import adegaImg1 from "../../assets/c669fe924c323acfcfce5a41b8205a0ef244752c.png
 import barbaraImg1 from "../../assets/b5fb7ee6a9953b7b9598b6f1f78b99d4d5879bce.png";
 
 const imageMap: Record<string, string[]> = {
-  "ecommerce-parafarmacia-google-ads": [paraImg1, paraImg2],
-  "ecommerce-moda-luxo-multi-canal": [modaImg1, modaImg2, modaImg3],
-  "lead-generation-cuidadores-google-ads": [cuidadoresImg1],
-  "lead-generation-colegio-privado-google-facebook-ads": [colegioImg1],
-  "ecommerce-sapatos-luxo-meta-ads": [sapatosImg1],
-  "ecommerce-tenis-meta-ads": [tenisImg1],
-  "ecommerce-suplementos-google-ads": [suplementosImg1, suplementosImg2],
-  "seo-ortopedista-website": [seoImg1],
+  "ecommerce-google-ads-v1": [paraImg1, paraImg2],
+  "ecommerce-luxo-multi-canal": [modaImg1, modaImg2, modaImg3],
+  "lead-generation-v1": [cuidadoresImg1],
+  "ecommerce-luxo-meta-ads": [sapatosImg1],
+  "ecommerce-ten-meta-ads": [tenisImg1],
+  "ecommerce-google-ads-2": [suplementosImg1, suplementosImg2],
+  "seo-ort-website": [seoImg1],
   "ecommerce-adega-labrugeira": [adegaImg1],
   "ux-seo-dra-barbara-campos": [barbaraImg1],
 };

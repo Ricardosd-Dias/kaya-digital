@@ -122,7 +122,7 @@ export const caseStudies: CaseStudy[] = [
     images: [],
   },
   {
-    slug: "ecommerce-tenis-meta-ads",
+    slug: "ecommerce-ten-meta-ads",
     headline: "+75% Vendas",
     title: "Como Escalámos um E-commerce com Meta Ads",
     client: "E-commerce",
@@ -168,7 +168,7 @@ export const caseStudies: CaseStudy[] = [
     images: [],
   },
   {
-    slug: "seo-ortopedista-website",
+    slug: "seo-ort-website",
     headline: "1ª Página Google",
     title: "Como Posicionámos uma Ortopedista na 1.ª Página do Google com SEO",
     client: "Ortopedista",
