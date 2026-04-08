@@ -9,7 +9,7 @@ export default async function handler(req, res) {
 
   await resend.emails.send({
     from: "Kaya Digital <noreply@kayadigital.pt>",
-    to: to: [process.env.EMAIL_TO!, process.env.EMAIL_TO_2!],
+    to: [process.env.EMAIL_TO!, process.env.EMAIL_TO_2!],
     subject: `Novo pedido de auditoria - ${nome}`,
     html: `
       <h2>Novo pedido de auditoria</h2>
