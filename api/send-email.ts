@@ -8,7 +8,7 @@ export default async function handler(req, res) {
   const { nome, email, telefone, empresa, website, mensagem } = req.body;
 
   await resend.emails.send({
-    from: "onboarding@resend.dev",
+    from: "Kaya Digital <noreply@kayadigital.pt>",
     to: process.env.EMAIL_TO!,
     subject: `Novo pedido de auditoria - ${nome}`,
     html: `
