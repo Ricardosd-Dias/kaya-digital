@@ -145,7 +145,7 @@ export const caseStudies: CaseStudy[] = [
     images: [],
   },
   {
-    slug: "ecommerce-google-ads-v1",
+    slug: "ecommerce-google-ads-2",
     headline: "+40% Vendas",
     title: "Como Escalámos um E-commerce com Google Ads",
     client: "E-commerce",
