@@ -26,10 +26,10 @@ export function ContactForm() {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
-            "Authorization": `Bearer ${publicAnonKey}`,
+            Authorization: `Bearer ${publicAnonKey}`,
           },
           body: JSON.stringify(formData),
-        }
+        },
       );
 
       const data = await response.json();
@@ -38,18 +38,32 @@ export function ContactForm() {
         throw new Error(data.error || "Failed to submit form");
       }
 
-      console.log("Form submission successful:", data);
+      // Enviar email de notificação
+      await fetch("/api/send-email", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
+      });
+
       setSubmitted(true);
     } catch (err) {
       console.error("Error submitting contact form:", err);
-      setError(err instanceof Error ? err.message : "Ocorreu um erro. Por favor, tenta novamente.");
+      setError(
+        err instanceof Error
+          ? err.message
+          : "Ocorreu um erro. Por favor, tenta novamente.",
+      );
     } finally {
       setIsSubmitting(false);
     }
   };
 
   return (
-    <section id="contacto" className="w-full px-6 md:px-12 lg:px-20 py-20" style={{ fontFamily: "Inter, sans-serif" }}>
+    <section
+      id="contacto"
+      className="w-full px-6 md:px-12 lg:px-20 py-20"
+      style={{ fontFamily: "Inter, sans-serif" }}
+    >
       <div className="max-w-2xl mx-auto text-center">
         <h2 className="text-[2rem] md:text-[2.5rem] leading-tight tracking-tight text-[#1a1a1a] mb-4">
           Pede a tua auditoria gratuita e começa já a ganhar clientes online
@@ -60,7 +74,9 @@ export function ContactForm() {
 
         {submitted ? (
           <div className="bg-white border border-border rounded-lg p-10">
-            <p className="text-[#1a1a1a] text-lg">Obrigado! Entraremos em contacto em breve.</p>
+            <p className="text-[#1a1a1a] text-lg">
+              Obrigado! Entraremos em contacto em breve.
+            </p>
           </div>
         ) : (
           <form onSubmit={handleSubmit} className="space-y-4">
@@ -69,14 +85,16 @@ export function ContactForm() {
                 {error}
               </div>
             )}
-            
+
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <input
                 type="text"
                 placeholder="Nome"
                 required
                 value={formData.nome}
-                onChange={(e) => setFormData({ ...formData, nome: e.target.value })}
+                onChange={(e) =>
+                  setFormData({ ...formData, nome: e.target.value })
+                }
                 className="w-full px-5 py-3.5 bg-white border border-border rounded-lg focus:outline-none focus:border-[#FF9941] transition-colors"
                 disabled={isSubmitting}
               />
@@ -85,7 +103,9 @@ export function ContactForm() {
                 placeholder="Email"
                 required
                 value={formData.email}
-                onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+                onChange={(e) =>
+                  setFormData({ ...formData, email: e.target.value })
+                }
                 className="w-full px-5 py-3.5 bg-white border border-border rounded-lg focus:outline-none focus:border-[#FF9941] transition-colors"
                 disabled={isSubmitting}
               />
@@ -95,7 +115,9 @@ export function ContactForm() {
                 type="tel"
                 placeholder="Telefone"
                 value={formData.telefone}
-                onChange={(e) => setFormData({ ...formData, telefone: e.target.value })}
+                onChange={(e) =>
+                  setFormData({ ...formData, telefone: e.target.value })
+                }
                 className="w-full px-5 py-3.5 bg-white border border-border rounded-lg focus:outline-none focus:border-[#FF9941] transition-colors"
                 disabled={isSubmitting}
               />
@@ -103,7 +125,9 @@ export function ContactForm() {
                 type="text"
                 placeholder="Empresa"
                 value={formData.empresa}
-                onChange={(e) => setFormData({ ...formData, empresa: e.target.value })}
+                onChange={(e) =>
+                  setFormData({ ...formData, empresa: e.target.value })
+                }
                 className="w-full px-5 py-3.5 bg-white border border-border rounded-lg focus:outline-none focus:border-[#FF9941] transition-colors"
                 disabled={isSubmitting}
               />
@@ -112,7 +136,9 @@ export function ContactForm() {
               type="text"
               placeholder="Website"
               value={formData.website}
-              onChange={(e) => setFormData({ ...formData, website: e.target.value })}
+              onChange={(e) =>
+                setFormData({ ...formData, website: e.target.value })
+              }
               className="w-full px-5 py-3.5 bg-white border border-border rounded-lg focus:outline-none focus:border-[#FF9941] transition-colors"
               disabled={isSubmitting}
             />
@@ -120,7 +146,9 @@ export function ContactForm() {
               placeholder="Mensagem (opcional)"
               rows={4}
               value={formData.mensagem}
-              onChange={(e) => setFormData({ ...formData, mensagem: e.target.value })}
+              onChange={(e) =>
+                setFormData({ ...formData, mensagem: e.target.value })
+              }
               className="w-full px-5 py-3.5 bg-white border border-border rounded-lg focus:outline-none focus:border-[#FF9941] transition-colors resize-none"
               disabled={isSubmitting}
             />
