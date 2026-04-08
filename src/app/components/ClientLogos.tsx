@@ -6,7 +6,7 @@ import lachoixImg from "../../assets/c2abd865768c356668f01588fb835953dd833ca4.pn
 import editImg from "../../assets/af3a06795308f30a84368bb473c1c6c19aaa5afa.png";
 import flairImg from "../../assets/40274b33716da121c57136146bbfe23d9ab41e7b.png";
 import internationalImg from "../../assets/ed77ed396d3ca0f752ea0d88b1532c10da52d969.png";
-import domiSaudeImg from "../../../assets/580b40a4aca557980a61bfbecdd25d2fe1bd6317.png";
+import domiSaudeImg from "../../assets/580b40a4aca557980a61bfbecdd25d2fe1bd6317.png";
 import { useEffect, useRef } from "react";
 
 const clients = [
