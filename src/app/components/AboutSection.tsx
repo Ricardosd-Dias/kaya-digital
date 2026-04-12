@@ -7,6 +7,7 @@ import pedroImg from "../../assets/693e89800adb46d1565f13f517dc55eb22ecb946.png"
 import riazeImg from "../../assets/77c4854515191d7f1bb89bd22db8be032fa5826f.png";
 import tomasImg from "../../assets/a37159d313064be9db4d4b0c642d2c24a8beb866.png";
 import franciscoImg from "../../assets/35849cbfed1b0f7f5afe76e392a0c8809c04f510.png";
+import antonioImg from "../../assets/ag.jpg";
 import useEmblaCarousel from "embla-carousel-react";
 import { useCallback, useEffect, useState } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
@@ -17,6 +18,12 @@ const teamMembers = [
     role: "Co-Founder",
     expertise: "Performance Marketing Expert",
     image: afonsoImg,
+  },
+  {
+    name: "António Gonçalves",
+    role: "Strategic Advisor",
+    expertise: "Digital Transformation & AI",
+    image: "ag.jpg",
   },
   {
     name: "Ricardo Dias",
